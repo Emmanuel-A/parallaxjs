@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Parallax.js | Simple Example</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container">	
+	<div id="container" class="container">	
+		<header>
+			<div class="container">
+				<a id="logo" href="index.html"><img id="icon" src="images/logo.png"/><h1>Parallax.js</h1>
+				</a>
+				<div id="nav">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="getting-started.html">Getting Started</a>
+						</li>
+						<li>
+							<a href="demos.html">Demos</a>
+						</li>
+						<li id="documentation-btn">
+							<a href="https://github.com/wagerfield/parallax">Documentation</a>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</header>	
+	</div>
+
+	<section id="demos">
+		<div id="space" class="examples">
+			<ul id="scene" class="scene">
+				<li id="stars_1" class="layer" data-depth="1.00"><img src="images/stars_1.png"></li>
+				<li class="layer" data-depth="0.80"><img src="images/stars_2.png"></li>
+				<li id="planet_1" class="layer" data-depth="0.60"><img src="images/planet_1.png"></li>
+				<li id="planet_2" class="layer" data-depth="0.70"><img src="images/planet_2.png"></li>
+				<li id="planet_3" class="layer" data-depth="0.60"><img src="images/planet_3.png"></li>					
+				<li id="planet_4" class="layer" data-depth="0.50"><img src="images/planet_4.png"></li>		
+				<li id="planet_5" class="layer" data-depth="0.90"><img src="images/planet_5.png"></li>			
+				<li id="planet_6"  class="layer" data-depth="0.70"><img src="images/planet_6.png"></li>			
+				<li id="planet_7" class="layer" data-depth="0.70"><img src="images/planet_7.png"></li>			
+				<li id="planet_8" class="layer" data-depth="0.50"><img src="images/planet_8.png"></li>			
+				<li id="planet_9" class="layer" data-depth="0.30"><img src="images/planet_9.png"></li>			
+				<li id="planet_10" class="layer" data-depth="1.00"><img src="images/planet_10.png"></li>	
+			</ul>
+		</div>	
+		<p class="previous-project"><a href="demos.html">< Previous project </a></p>			
+		<p class="next-project"><a href="under-water.html">Next project ></a></p>
+	</section>	
+
+	<footer>
+		<p>© 2015 Parallax.js. All rights reserved </p>
+	</footer>
+</div>
+	<!-- Scripts -->
+	<script src="scripts/parallax.js"></script>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+</body>
+</html>

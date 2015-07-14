@@ -1,0 +1,402 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  background: #fff;
+  color: #666;
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 13px 130px 0;
+  background-color: #fff;
+  height: 66px;
+  width: 100%;
+  opacity: 0.9;
+  top: 0;
+  position: fixed;
+  clear: both;
+  z-index: 99;
+}
+header ul{
+  float: right;
+  padding: 0 270px 0 0;
+}
+header li{
+  padding: 0 20px;
+}
+header #logo h1{
+  margin: -51px 0 0 60px;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #2c3e50;
+}
+header #icon{
+  width: 50px;
+}
+#nav{
+  margin: -30px 0 0 0;
+  font-size: 16px;
+}
+#nav a{
+  color: #2c3e50;
+}
+/*#nav li:last-child{
+  background-color: #e74c3c;
+  padding: 12px 20px 12px 20px;
+  border-radius: 5px;
+  color: #bdc3c7;
+}*/
+#nav #documentation-btn{
+  background-color: #e74c3c;
+  padding: 12px 20px 12px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0.5px 0.5px #000;
+}
+#nav #documentation-btn a{
+  color: #ecf0f1;
+}
+img {
+  display: block;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  min-width: 1280px;
+  max-width: 1280px;
+}
+
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+.fill {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  left: 5%;
+  top: 5%;
+}
+
+.expand-width {
+  width: 100%;
+}
+
+.border {
+  border: 2px dashed #00FFAA;
+}
+
+.aspect {
+  opacity: 0.2;
+}
+
+section#intro{
+  background:url(../images/background.jpg);	
+  background-size: cover;
+  max-width: 1280px;
+  height: 360px;
+  overflow: hidden;
+  margin: 80px 0 0 0;
+  color: #c4c4c4;
+}
+section#intro h2{
+  font-size: 60px;
+}
+section#intro p{
+  font-size: 30px;
+  font-weight: lighter;
+}
+.content{
+  padding: 105px 130px 0 130px;
+  position: absolute;
+  z-index: 1;
+}
+section#intro .content p{
+}
+section#why{
+  min-height: 390px;
+  background-color: #fff;
+}
+section#why img{
+  float: left;
+  width: 400px;
+  margin: 35px 0 0 130px;
+}
+section#why .content{
+  right: 0;
+  width: 500px;
+  font-weight: lighter;
+  line-height: 30px;
+  padding: 40px 130px 0 0;
+}
+section#why .content p{
+  font-size: 18px;
+}
+h3{
+  font-size: 30px;
+  font-weight: lighter;
+  color: #2c3e50;
+}
+section#download{
+  background-color: #16a085;
+  height: 205px;
+  font-weight: lighter;
+  margin: 0 auto;
+}
+iframe{
+  margin: 0 130px 0 0;
+  float: right;
+}
+section#download .content{
+  line-height: 30px;
+  font-weight: lighter;
+  color: #cccccc;
+  width: 565px;
+  padding: 40px 0px 0 130px;
+}
+section#getting-started{
+  background-color:#fff;
+  height: 300px;
+  color: #c4c4c4;
+}
+section#documentation{
+  background-color: #fff;
+  height: 300px;
+  font-weight: lighter;
+}
+section#documentation a#documentation-btn{
+  background-color: #e74c3c;
+  padding: 12px 20px 12px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0.5px 0.5px #000;
+}
+a#documentation-btn{
+    color: #ecf0f1;
+}
+section#setup{
+  background-color: #fff;
+  margin: 0 auto;
+  font-weight: lighter;
+  line-height: 30px;
+  height: 1000px;
+}
+section#setup .content{
+  padding: 150px 130px;
+}
+section#setup .content h4{
+  text-align: center;
+  font-size: 24px;
+}
+section#setup .content #code p{
+  text-align: center;
+}
+section#setup .content img{
+  margin: 0 auto;
+}
+.examples{
+  overflow: hidden;
+  width: 800px;
+  height: 500px;  
+  margin: 0 auto;
+}
+section#demos{
+  background-color: #fff;
+  margin: 160px 0 0 0;
+  font-weight: lighter;
+  line-height: 30px;
+  height: auto;
+  padding: 0 0 150px 0;
+}
+#space{ 
+  background-color: #000; 
+  background:url(../images/background.jpg) no-repeat; 
+  background-size: cover;
+}
+section#demos #pirate-scene{
+  background:url(../images/pirate-scene/background.png) no-repeat; 
+}
+section#demos #under-water{
+  background:url(../images/under-water/background.png) no-repeat; 
+}
+section#demos p{
+  text-align: center;
+  color: #c4c4c4;
+  font-size: 14px;
+  width: 130px;
+  background-color: #16a085;
+  padding: 12px 20px 12px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0.5px 0.5px #000;
+}
+section#demos .next-project a, .previous-project a{
+  color: #ecf0f1;
+}
+section#demos .next-project{
+  float: right;
+  margin: 40px 240px 0 0;
+}
+section#demos .previous-project{
+  float: left;
+  margin: 40px 0px 0 240px;
+}
+
+#stars_1{
+  overflow: hidden;
+}
+#planet_1{
+  margin: 258px 0px 0 600px;
+}
+#planet_2{
+  margin: 180px 0px 0 100px;
+}
+#planet_3{
+  margin: 100px 0px 0 350px;
+}
+#planet_4{
+  margin: 400px 0px 0 400px;
+}
+#planet_5{
+  margin: 150px 0px 0 600px;
+}
+#planet_6{
+  margin: 235px 0px 0 450px;
+}
+#planet_7{
+  margin: 50px 0px 0 170px;
+}
+#planet_8{
+  margin: 400px 0px 0 100px;
+}
+#planet_9{
+  margin: 70px 0px 0 700px;
+}
+#planet_10{
+  margin: 360px 0px 0 520px;
+}
+
+#water-05{
+  margin: 340px 0 0 0;
+}
+#island{
+  margin: 250px 0 0 500px
+}
+#water-04{
+  margin: 305px 0 0 -70px;
+}
+#water-03{
+  margin: 320px 0 0 -80px;
+}
+#water-02{
+  margin: 340px 0 0 -80px;
+}
+#water-01{
+  margin: 380px 0 0 -180px;
+}
+#ship{
+  margin: 180px 0 0 0;
+}
+
+#waves{
+  margin: 0 0 0 -70px;
+}
+#coral-01{
+  margin: 310px 0px 0 -30px;
+}
+#coral-02{
+  margin: 330px 0 0 600px;
+}
+#fish-10{
+  margin: 300px 0 0 500px;
+}
+#fish-9{
+  margin: 400px 0 0 100px;
+}
+#fish-8{
+  margin: 200px 0 0 200px;
+}
+#fish-7{
+  margin: 300px 0 0 350px;
+}
+#fish-6{
+  margin: 250px 0 0 700px;
+}
+#fish-5{
+  margin: 400px 0 0 550px;
+}
+#fish-4{
+  margin: 180px 0 0 580px;
+}
+#fish-3{
+  margin: 410px 0 0 255px;
+}
+#fish-2{
+  margin: 270px 0 0 45px;
+}
+#fish-1{
+  margin: 400px 0 0 410px;
+}
+footer{
+  padding: 50px 130px;
+  background-color: #fff; 
+  text-align: center;
+  font-weight: lighter;
+  overflow: hidden;
+
+}

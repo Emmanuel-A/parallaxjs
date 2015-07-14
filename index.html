@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Parallax.js</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container">	
+	<div id="container" class="container">	
+		<header>
+			<div class="container">
+				<a id="logo" href="index.html"><img id="icon" src="images/logo.png"/><h1>Parallax.js</h1>
+				</a>
+				<div id="nav">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="getting-started.html">Getting Started</a>
+						</li>
+						<li>
+							<a href="demos.html">Demos</a>
+						</li>
+						<li id="documentation-btn">
+							<a href="https://github.com/wagerfield/parallax">Documentation</a>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</header>	
+	</div>
+
+	<section id="intro">
+		<div class="content">
+			<h2>Parallax.js</h2> <br/>
+			<p>Parallax Engine that reacts to the orientation of a smart device.</p>
+		</div>
+		<ul id="scene" class="scene">
+			<li id="stars_1" class="layer" data-depth="1.00"><img src="images/stars_1.png"></li>
+			<li class="layer" data-depth="0.80"><img src="images/stars_2.png"></li>
+			<!-- <li id="planet_1" class="layer" data-depth="0.60"><img src="images/planet_1.png"></li>
+			<li id="planet_2" class="layer" data-depth="0.70"><img src="images/planet_2.png"></li>
+			<li id="planet_3" class="layer" data-depth="0.60"><img src="images/planet_3.png"></li>					
+			<li id="planet_4" class="layer" data-depth="0.50"><img src="images/planet_4.png"></li>		
+			<li id="planet_5" class="layer" data-depth="0.90"><img src="images/planet_5.png"></li>			
+			<li id="planet_6"  class="layer" data-depth="0.70"><img src="images/planet_6.png"></li>			
+			<li id="planet_7" class="layer" data-depth="0.70"><img src="images/planet_7.png"></li>			
+			<li id="planet_8" class="layer" data-depth="0.50"><img src="images/planet_8.png"></li>			
+			<li id="planet_9" class="layer" data-depth="0.30"><img src="images/planet_9.png"></li>			
+			<li id="planet_10" class="layer" data-depth="0.10"><img src="images/planet_10.png"></li> -->	
+		</ul>
+	</section>	
+
+	<section id="why">
+		<img src="images/iphone.gif">
+		<div class="content">
+			<h3>Why Parallax.js?</h2> <br/>
+			<p>Parallax.js library uses no gyroscope or motion detection hardware. The position of the cursor is used instead.</p> <br/> <br/>
+			<h3>Check it out!</h2> <br/>
+			<p>For the best experience, check out this site on a mobile or tablet equipped with a gyroscope.</p>
+		</div>
+	</section>	
+
+	<section id="download">
+		<div class="content">
+			<h3>It's free!</h2> <br/>
+			<p>Parallax.js library offers a simple api to get going with all your parallax needs. Also, it is open source and free. Learn how to use it today.</p> <br/> <br/>
+		</div>
+	</section>
+
+	<section id="documentation">
+		<iframe width="600" height="300" src="https://www.youtube.com/embed/D9yjTKSUw68?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		<div class="content">
+			<h3>Getting Started</h3> <br/><br/>
+			<p><a id="documentation-btn" href="https://github.com/wagerfield/parallax">Documentation</a></p>
+		</div>
+	</section>
+
+	<footer>
+		<p>© 2015 Parallax.js. All rights reserved </p>
+	</footer>
+</div>
+	<!-- Scripts -->
+	<script src="scripts/parallax.js"></script>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+</body>
+</html>

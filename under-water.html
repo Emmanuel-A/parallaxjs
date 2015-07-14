@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Parallax.js | Simple Example</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container">	
+	<div id="container" class="container">	
+		<header>
+			<div class="container">
+				<a id="logo" href="index.html"><img id="icon" src="images/logo.png"/><h1>Parallax.js</h1>
+				</a>
+				<div id="nav">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="getting-started.html">Getting Started</a>
+						</li>
+						<li>
+							<a href="demos.html">Demos</a>
+						</li>
+						<li id="documentation-btn">
+							<a href="https://github.com/wagerfield/parallax">Documentation</a>
+						</li>
+					</ul>
+				</div>
+			</div>	
+		</header>	
+	</div>
+
+	<section id="demos">
+		<div id="under-water" class="examples">
+			<ul id="scene" class="scene">
+				<li id="stars_1" class="layer" data-depth="1.00"><img src=""></li>
+				<li class="layer" data-depth="0.80"><img src=""></li>			
+				<li id="waves" class="layer" data-depth="1.00"><img src="images/under-water/waves.png"></li>	
+				<li id="coral-01" class="layer" data-depth="0.80"><img src="images/under-water/coral-01.png"></li>	
+				<li id="coral-02" class="layer" data-depth="0.80"><img src="images/under-water/coral-02.png"></li>	
+				<li id="fish-1" class="layer" data-depth="1.00"><img src="images/under-water/fish-1.png"></li>	
+				<li id="fish-2" class="layer" data-depth="0.70"><img src="images/under-water/fish-2.png"></li>	
+				<li id="fish-3" class="layer" data-depth="0.50"><img src="images/under-water/fish-3.png"></li>	
+				<li id="fish-4" class="layer" data-depth="0.80"><img src="images/under-water/fish-4.png"></li>	
+				<li id="fish-5" class="layer" data-depth="0.60"><img src="images/under-water/fish-5.png"></li>	
+				<li id="fish-6" class="layer" data-depth="1.00"><img src="images/under-water/fish-6.png"></li>	
+				<li id="fish-7" class="layer" data-depth="0.90"><img src="images/under-water/fish-7.png"></li>	
+				<li id="fish-8" class="layer" data-depth="0.80"><img src="images/under-water/fish-8.png"></li>	
+				<li id="fish-9" class="layer" data-depth="0.60"><img src="images/under-water/fish-9.png"></li>	
+				<li id="fish-10" class="layer" data-depth="1.00"><img src="images/under-water/fish-10.png"></li>	
+			</ul>
+		</div>
+		<p class="previous-project"><a href="outerspace.html">< Previous project </a></p>	
+		<p class="next-project"><a href="demos.html">Next project ></a></p>	
+	</section>	
+
+	<footer>
+		<p>© 2015 Parallax.js. All rights reserved </p>
+	</footer>
+</div>
+	<!-- Scripts -->
+	<script src="scripts/parallax.js"></script>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+</body>
+</html>
